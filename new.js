@@ -33,3 +33,17 @@ const result2 = Object.values(computeInfo);
 const result3 = Object.entries(computeInfo);
 const result4 = Object.fromEntries(result3);
 
+const personOne={
+    name: "Fatima",
+    lastName: "Alisada",
+
+}
+const personOneExtraInfo={
+    dob: "12/12/1212",
+    score: "90"
+} 
+ personOneFamilyInfo={
+    fName: "Muhammad Reza",
+    familyName: "Qurbani"
+ }
+Object.assign(personOne,personOneExtraInfo,personOneFamilyInfo);
