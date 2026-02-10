@@ -5,14 +5,23 @@
 // const num=[70,80,90];
 // num.filter(0,23);
 // const pushed=num.unpush("9090");
-const studentList={
-    name: "Ali",
-    lastName: "Alizada",
-    age: 24,
-    greet: function(){
-        console.log(`Your name is ${this.name} your score is ${this.score} and your age is ${this.age}`)
-    }
+// const studentList={
+//     name: "Ali",
+//     lastName: "Alizada",
+//     age: 24,
+//     greet: function(){
+//         console.log(`Your name is ${this.name} your score is ${this.score} and your age is ${this.age}`)
+//     }
+// }
+// studentList.name="Ali Reza";
+// studentList["score"]=90;
+// delete studentList.lastName;
+
+const computeInfo={
+    name: "Dell",
+    model: "Latedude",
+    monitor: "HD 120098",
+    RAM: "120GB",
+    hardDisc: "1024GB"
 }
-studentList.name="Ali Reza";
-studentList["score"]=90;
-delete studentList.lastName;
+
