@@ -24,4 +24,12 @@ const computeInfo={
     RAM: "120GB",
     hardDisc: "1024GB"
 }
+for(key in computeInfo){
+    console.log(computeInfo[key])
+}
+
+const result = Object.keys(computeInfo);
+const result2 = Object.values(computeInfo);
+const result3 = Object.entries(computeInfo);
+const result4 = Object.fromEntries(result3);
 
