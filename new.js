@@ -72,4 +72,12 @@ score: 100
 
  }
  const result=Object.freeze(personInfo);
- 
+ personInfo.fatherName="Nadir Ali";
+ const result1=Object.isFrozen(personInfo);
+
+ if(!Object.isFrozen(personInfo)){
+    personInfo.name="Qadir"
+ }
+else{
+    console.log("The variable is frozed")
+}
