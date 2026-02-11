@@ -47,7 +47,9 @@
 //     familyName: "Qurbani"
 //  }
 // Object.assign(personOne,personOneExtraInfo,personOneFamilyInfo);
- Object.create(null,{
+
+
+ const newPerson=Object.create(null,{
     name: {
         value: "Ali",
     writable: true,
@@ -59,5 +61,15 @@
         enumerable: false
 
     },
-    
+
  });
+
+ const personInfo={
+name: "Ahmad",
+lastName: "Alizada",
+age: 23,
+score: 100
+
+ }
+ const result=Object.freeze(personInfo);
+ 
