@@ -35,7 +35,7 @@ const result4 = Object.fromEntries(result3);
 
 const personOne={
     name: "Fatima",
-    lastName: "Alisada",
+    lastName: "Alizada",
 
 }
 const personOneExtraInfo={
