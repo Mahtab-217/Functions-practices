@@ -17,33 +17,47 @@
 // studentList["score"]=90;
 // delete studentList.lastName;
 
-const computeInfo={
-    name: "Dell",
-    model: "Latedude",
-    monitor: "HD 120098",
-    RAM: "120GB",
-    hardDisc: "1024GB"
-}
-for(key in computeInfo){
-    console.log(computeInfo[key])
-}
+// const computeInfo={
+//     name: "Dell",
+//     model: "Latedude",
+//     monitor: "HD 120098",
+//     RAM: "120GB",
+//     hardDisc: "1024GB"
+// }
+// for(key in computeInfo){
+//     console.log(computeInfo[key])
+// }
 
-const result = Object.keys(computeInfo);
-const result2 = Object.values(computeInfo);
-const result3 = Object.entries(computeInfo);
-const result4 = Object.fromEntries(result3);
+// const result = Object.keys(computeInfo);
+// const result2 = Object.values(computeInfo);
+// const result3 = Object.entries(computeInfo);
+// const result4 = Object.fromEntries(result3);
 
-const personOne={
-    name: "Fatima",
-    lastName: "Alizada",
+// const personOne={
+//     name: "Fatima",
+//     lastName: "Alizada",
 
-}
-const personOneExtraInfo={
-    dob: "12/12/1212",
-    score: "90"
-} 
- personOneFamilyInfo={
-    fName: "Muhammad Reza",
-    familyName: "Qurbani"
- }
-Object.assign(personOne,personOneExtraInfo,personOneFamilyInfo);
+// }
+// const personOneExtraInfo={
+//     dob: "12/12/1212",
+//     score: "90"
+// } 
+//  personOneFamilyInfo={
+//     fName: "Muhammad Reza",
+//     familyName: "Qurbani"
+//  }
+// Object.assign(personOne,personOneExtraInfo,personOneFamilyInfo);
+ Object.create(null,{
+    name: {
+        value: "Ali",
+    writable: true,
+    enumerable: true,
+    },
+    lastName: {
+        value: "Ahmadi",
+        writable: true,
+        enumerable: false
+
+    },
+    
+ });
