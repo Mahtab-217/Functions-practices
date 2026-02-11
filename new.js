@@ -81,3 +81,21 @@ score: 100
 else{
     console.log("The variable is frozed")
 }
+
+const computeInfo={
+    name: "Dell",
+    model: "Latedude",
+    monitor: "HD 120098",
+    RAM: "120GB",
+    hardDisc: "1024GB"
+}
+Object.seal(computeInfo)
+computeInfo.name="Apple",
+computeInfo.color="Black"
+
+if(Object.isSealed(computeInfo)){
+    computeInfo.monitor="Not HD"
+}
+else{
+    console.log("this field is sealed");
+}
