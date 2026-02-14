@@ -49,53 +49,53 @@
 // Object.assign(personOne,personOneExtraInfo,personOneFamilyInfo);
 
 
- const newPerson=Object.create(null,{
-    name: {
-        value: "Ali",
-    writable: true,
-    enumerable: true,
-    },
-    lastName: {
-        value: "Ahmadi",
-        writable: true,
-        enumerable: false
+//  const newPerson=Object.create(null,{
+//     name: {
+//         value: "Ali",
+//     writable: true,
+//     enumerable: true,
+//     },
+//     lastName: {
+//         value: "Ahmadi",
+//         writable: true,
+//         enumerable: false
 
-    },
+//     },
 
- });
+//  });
 
- const personInfo={
-name: "Ahmad",
-lastName: "Alizada",
-age: 23,
-score: 100
+//  const personInfo={
+// name: "Ahmad",
+// lastName: "Alizada",
+// age: 23,
+// score: 100
 
- }
- const result=Object.freeze(personInfo);
- personInfo.fatherName="Nadir Ali";
- const result1=Object.isFrozen(personInfo);
+//  }
+//  const result=Object.freeze(personInfo);
+//  personInfo.fatherName="Nadir Ali";
+//  const result1=Object.isFrozen(personInfo);
 
- if(!Object.isFrozen(personInfo)){
-    personInfo.name="Qadir"
- }
-else{
-    console.log("The variable is frozed")
-}
+//  if(!Object.isFrozen(personInfo)){
+//     personInfo.name="Qadir"
+//  }
+// else{
+//     console.log("The variable is frozed")
+// }
 
-const computeInfo={
-    name: "Dell",
-    model: "Latedude",
-    monitor: "HD 120098",
-    RAM: "120GB",
-    hardDisc: "1024GB"
-}
-Object.seal(computeInfo)
-computeInfo.name="Apple",
-computeInfo.color="Black"
+// const computeInfo={
+//     name: "Dell",
+//     model: "Latedude",
+//     monitor: "HD 120098",
+//     RAM: "120GB",
+//     hardDisc: "1024GB"
+// }
+// Object.seal(computeInfo)
+// computeInfo.name="Apple",
+// computeInfo.color="Black"
 
-if(Object.isSealed(computeInfo)){
-    computeInfo.monitor="Not HD"
-}
-else{
-    console.log("this field is sealed");
-}
+// if(Object.isSealed(computeInfo)){
+//     computeInfo.monitor="Not HD"
+// }
+// else{
+//     console.log("this field is sealed");
+// }
