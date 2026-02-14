@@ -8,16 +8,21 @@
 </head>
 <body>
      <button>Show message</button>
-     <button id="a"></button>
-     <button id="b"></button>
-     <h1></h1>
+     <button id="a">Increase</button>
+     <button id="b">Decrese</button>
+     <h1>0</h1>
      <script>
         const btn=document.querySelector("button");
-        
+        const h1=document.querySelector("h1")
         btn.addEventListener("click", ()=>{
            console.log("Hello there")
         })
+        function dec(){
+            h1++;
+        }
+ 
         const btn1 =document.getElementById("a")
+        h1.addEventListener("click", dec);
         const btn2 =document.getElementById("b")
          
      </script>
