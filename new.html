@@ -14,22 +14,25 @@
      <script>
         const btn=document.querySelector("button");
         const h1=document.querySelector("h1")
-        btn.addEventListener("click", ()=>{
-           console.log("Hello there")
-        })
-        let number=0
-        function dec(){
-            number--;
-        }
-        function inc(){
-            number++;
-        }
+      
  
         const btn1 =document.getElementById("a")
         btn1.addEventListener("click", dec);
         const btn2 =document.getElementById("b")
+        const h2=document.querySelector("h1")
+           
         btn2.addEventListener("click", )
-         
+         let number=0;
+         function inc(){
+            number++
+            h2.textContent=number;
+         }
+         function dec(){
+            number--;
+            h2.textContent=number;
+         }
+         btn1.addEventListener("click",dec)
+         btn2.addEventListener("click",inc)
      </script>
 </body>
 </html>
