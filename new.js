@@ -1,8 +1,19 @@
-const pList=document.querySelector("div > p:nth-child(2");
-for(let p of pList){
-    p.classList.add("b")
+const pList=document.querySelector("div > p");
+const btn=document.querySelector("button");
+const image=document.querySelector("img");
+function changer(){
+image.setAttribute("src","https://plus.unsplash.com/premium_photo-1676166013233-8c398ea1f50c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYXV0aWZ1bHxlbnwwfHwwfHx8MA%3D%3D")
 }
+btn.addEventListener("click",changer);
 
+// for(let p of pList){
+//     p.classList.add("b")
+// }
+for(let i= 0; i< pList.length; i++){
+    if(i%2!==0){    
+        pList[i].classList.add("b");
+    }
+}
 
 
 
