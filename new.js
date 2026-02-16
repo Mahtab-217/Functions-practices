@@ -1,3 +1,26 @@
+const pList=document.querySelector("div > p:nth-child(2");
+for(let p of pList){
+    p.classList.add("b")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const number=[1,2,3,4,5];
 // number.push(6,7);
 // number.pop();
