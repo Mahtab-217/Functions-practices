@@ -1,7 +1,9 @@
-
-
-
-
+const section= document.querySelector("section");
+section.style.cssText="border: 1px solid black; border-rediuce:8px; height:300px; width:90%; margin:0 auto"
+const h1=document.createElement("h1");
+ section.append(h1);
+ h1.textContent="In the name of allah";
+h1.setAttribute("class","a")
 
 // const pList=document.querySelector("div > p");
 // const btn=document.querySelector("button");
