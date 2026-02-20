@@ -3,7 +3,13 @@ section.style.cssText="border: 1px solid black; border-rediuce:8px; height:300px
 const h1=document.createElement("h1");
  section.append(h1);
  h1.textContent="In the name of allah";
-h1.setAttribute("class","a")
+// h1.setAttribute("class","a")
+h1.classList.add("a")
+const p=document.createElement("p")
+p.innerHTML="Hello good Morning"
+section.appendChild(p);
+p.setAttribute("class","b");
+
 
 // const pList=document.querySelector("div > p");
 // const btn=document.querySelector("button");
