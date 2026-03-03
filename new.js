@@ -3,15 +3,17 @@ const fBtn=document.getElementById("FBtn");
 const Pform=document.getElementById("Pform");
 const Fform=document.getElementById("Fform");
 pBtn.addEventListener("click",()=>{
+    
     Pform.classList.remove("hidden")
     Pform.classList.add("flex");
-    // if(Pform.classList.contains("hidden")){
-    //     Pform.classList.remove("hidden")
-    //     Pform.classList.add("flex");
-    // }
+   
 })
 
-
+fBtn.addEventListener("click",()=>{
+    Fform.classList.remove("hidden");
+    Fform.classList.add("flex")
+    
+})
 
 
 
