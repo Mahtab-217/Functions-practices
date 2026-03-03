@@ -3,16 +3,28 @@ const fBtn=document.getElementById("FBtn");
 const Pform=document.getElementById("Pform");
 const Fform=document.getElementById("Fform");
 pBtn.addEventListener("click",()=>{
-    
-    Pform.classList.remove("hidden")
-    Pform.classList.add("flex");
+    Pform.classList.toggle("hidden")
+    if(!Pform.classList.contains("hidden")){
+        pBtn.textContent="hide information"
+    }
+    else{
+        pBtn.textContent="Personal Information"
+    }
+    // Pform.classList.remove("hidden")
+    // Pform.classList.add("flex");
    
 })
 
 fBtn.addEventListener("click",()=>{
-    Fform.classList.remove("hidden");
-    Fform.classList.add("flex")
-    
+    // Fform.classList.remove("hidden");
+    // Fform.classList.add("flex")
+    Fform.classList.toggle("hidden")
+    if(!Fform.classList.contains("hidden")){
+        fBtn.textContent="Hide Information"
+    }
+    else{
+        fBtn.textContent="Family Information"
+    }
 })
 
 
