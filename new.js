@@ -36,7 +36,7 @@ fBtn.addEventListener("click",()=>{
 
  class Human{
  setAge(age){
-    if(!isNaN(age)&& age<=1){
+    if(!isNaN(age)&& age>=1){
         this.age=age;
     }
     else{
@@ -46,9 +46,23 @@ fBtn.addEventListener("click",()=>{
  getAge(){
     return this.age;
  }
+  setEmail(email){
+    if(email.includes("@gmail.com") && isNaN(email)){
+        this.email= email;
+    }
+    else{
+        console.log("your email is not validated")
+    }
+  }
+getEmail(){
+    return this.email;
+}
+
  }
 const person1=new Human();
-
+person1.setAge(45);
+person1.setEmail("Fatima@gmail.com  ");
+console.log(person1.getEmail());
 const person2=new Human();
 const person3=new Human();
 
