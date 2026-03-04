@@ -35,6 +35,17 @@ fBtn.addEventListener("click",()=>{
 
 
  class Human{
+    setName(name){
+      if(isNaN(name) && name.length>=3){
+           this.name=name
+      }
+      else{
+        console.log("the name is not validated")
+      }
+    }
+    getName(){
+      return this.name;
+    }
  setAge(age){
     if(!isNaN(age)&& age>=1){
         this.age=age;
@@ -63,6 +74,9 @@ const person1=new Human();
 person1.setAge(45);
 person1.setEmail("Fatima@gmail.com  ");
 console.log(person1.getEmail());
+person1.setAge(23);
+person1.setName("Ali Reza");
+console.log(person1.getName());
 const person2=new Human();
 const person3=new Human();
 
