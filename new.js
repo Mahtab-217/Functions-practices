@@ -7,7 +7,7 @@ pBtn.addEventListener("click",()=>{
     if(!Pform.classList.contains("hidden")){
         pBtn.textContent="hide information"
     }
-    else{
+    else{   
         pBtn.textContent="Personal Information"
     }
     // Pform.classList.remove("hidden")
@@ -32,6 +32,25 @@ fBtn.addEventListener("click",()=>{
 
 
 
+
+
+ class Human{
+ setAge(age){
+    if(!isNaN(age)&& age<=1){
+        this.age=age;
+    }
+    else{
+        console.log("the age should be a number and greater than 1")
+    }
+ }
+ getAge(){
+    return this.age;
+ }
+ }
+const person1=new Human();
+
+const person2=new Human();
+const person3=new Human();
 
 
 
