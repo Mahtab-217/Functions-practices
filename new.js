@@ -99,7 +99,13 @@ class Animal{
         console.log(`${this.name} can make sound`)
     }
 }
-
+class Human extends Animal{
+    lastName;
+    think(){
+        console.log("Human can think")
+    }
+}
+const user1=new Human();
 
 
 
