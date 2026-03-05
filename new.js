@@ -120,13 +120,16 @@ class Human extends Animal{
      this.age=age;
      this.weight=weight;
     }
+    static work(){
+              console.log("Human can work")
+    }
     think(){
         console.log("Human can think")
     }
 }
 const user1=new Human("Ahmad",23,60,"Ahmadi");
 user1.eat();
-
+Human.work();
 
 
 
