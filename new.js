@@ -33,8 +33,9 @@ fBtn.addEventListener("click",()=>{
 
 
 
-
+// today's H.W
  class Human{
+    // Name
     setName(name){
       if(isNaN(name) && name.length>=3){
            this.name=name
@@ -46,6 +47,7 @@ fBtn.addEventListener("click",()=>{
     getName(){
       return this.name;
     }
+    // Age
  setAge(age){
     if(!isNaN(age)&& age>=1){
         this.age=age;
@@ -57,6 +59,7 @@ fBtn.addEventListener("click",()=>{
  getAge(){
     return this.age;
  }
+//  Email
   setEmail(email){
     if(email.includes("@gmail.com") && isNaN(email)){
         this.email= email;
@@ -70,6 +73,7 @@ getEmail(){
 }
 
  }
+//  instanciation
 const person1=new Human();
 person1.setAge(45);
 person1.setEmail("Fatima@gmail.com  ");
@@ -77,10 +81,24 @@ console.log(person1.getEmail());
 person1.setAge(23);
 person1.setName("Ali Reza");
 console.log(person1.getName());
+
 const person2=new Human();
 const person3=new Human();
 
 
+//  Saturday's HomeWork
+class Animal{
+    name;
+    age;
+    weight;
+    eaat(){
+        console.log(`${this.name} can eat something`);
+
+    }
+    sound(){
+        console.log(`${this.name} can make sound`)
+    }
+}
 
 
 
