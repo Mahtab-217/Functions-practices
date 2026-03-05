@@ -86,12 +86,24 @@ const person2=new Human();
 const person3=new Human();
 
 
+
+
+
+
+
+
+
 //  Saturday's HomeWork
 class Animal{
     name;
     age;
     weight;
-    eaat(){
+    constructor(name,age,weight){
+        this.name=name;
+        this.age=age;
+        this.weight=weight;
+    }
+    eat(){
         console.log(`${this.name} can eat something`);
 
     }
@@ -101,12 +113,19 @@ class Animal{
 }
 class Human extends Animal{
     lastName;
+    constructor(lsName,name,age,weight){
+        super(Animal)
+     this.lastName=lsName;
+     this.name=name;
+     this.age=age;
+     this.weight=weight;
+    }
     think(){
         console.log("Human can think")
     }
 }
-const user1=new Human();
-
+const user1=new Human("Ahmad",23,60,"Ahmadi");
+user1.eat();
 
 
 
