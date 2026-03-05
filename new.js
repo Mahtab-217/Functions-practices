@@ -130,7 +130,8 @@ class Human extends Animal{
 const user1=new Human("Ahmad",23,60,"Ahmadi");
 user1.eat();
 Human.work();
-
+Human.eat();
+Human.sound();
 
 
 
