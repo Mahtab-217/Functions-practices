@@ -336,12 +336,6 @@ class Animal{
         return this.name + "can walk"
     }
 }
-// const Dog=new Animal("Dog",4);
-// console.log(Dog.move());
-// const Cat=new Animal("Cat",2)
-// console.log(Cat.move());
-// const person2=new Animal("John",45)
-// console.log(person2.move());
 
 
 class Cat extends Animal{
@@ -354,21 +348,29 @@ class Cat extends Animal{
    }
    move(){
     return `${this.name} moves with four legs`
-   }
 }
- class Human extends Animal{
+}
+class Human extends Animal{
     lastName;
-     constructor(name,age,lastName){
+    constructor(name,age,lastName){
         super(Animal)
         this.name=name;
         this.age=age;
         this.lastName=lastName;
-     }
-     move(){
+    }
+    move(){
         return `${this.name} moves with two legs`
-     }
- }
- const cat1=new Cat("Nanaz",4,"true");
- cat1.move();
- const cat2=new Cat("Meow",2,"false");
- const person3=new Human("Ali",23, "Ahmadi");
+    }
+}
+const cat1=new Cat("Nanaz",4,"true");
+cat1.move();
+const cat2=new Cat("Meow",2,"false");
+const person3=new Human("Ali",23, "Ahmadi");
+
+
+// const Dog=new Animal("Dog",4);
+// console.log(Dog.move());
+// const Cat=new Animal("Cat",2)
+// console.log(Cat.move());
+// const person2=new Animal("John",45)
+// console.log(person2.move());
