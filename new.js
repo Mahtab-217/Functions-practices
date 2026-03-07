@@ -295,5 +295,30 @@ class Human{
     this.age=age;
     this.email=email;
   }
+  getAge(){
+    console.log(`${(this.name).toUpperCase()} is ${this.age} years old`)
+  }
+  talk(){
+    console.log(`${this.name} can talk`)
+  }
+       
+}
+const person1=new Human("Ahmad", 23,"ahmad@example.com");
+person1.getAge();
+
+
+
+class Weather{
+    constructor(degree){
+        this.degree=degree;
+    }
+    celciusToFaranhite(){
+        const convert=this.degree*9/5 +32;
+        return convert;
+    }
 
 }
+
+
+const currentWeather=  new Weather(23);
+const result=currentWeather.celciusToFaranhite();
