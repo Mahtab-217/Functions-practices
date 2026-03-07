@@ -1,89 +1,89 @@
-const pBtn=document.getElementById("PBtn");
-const fBtn=document.getElementById("FBtn");
-const Pform=document.getElementById("Pform");
-const Fform=document.getElementById("Fform");
-pBtn.addEventListener("click",()=>{
-    Pform.classList.toggle("hidden")
-    if(!Pform.classList.contains("hidden")){
-        pBtn.textContent="hide information"
-    }
-    else{   
-        pBtn.textContent="Personal Information"
-    }
-    // Pform.classList.remove("hidden")
-    // Pform.classList.add("flex");
+// const pBtn=document.getElementById("PBtn");
+// const fBtn=document.getElementById("FBtn");
+// const Pform=document.getElementById("Pform");
+// const Fform=document.getElementById("Fform");
+// pBtn.addEventListener("click",()=>{
+//     Pform.classList.toggle("hidden")
+//     if(!Pform.classList.contains("hidden")){
+//         pBtn.textContent="hide information"
+//     }
+//     else{   
+//         pBtn.textContent="Personal Information"
+//     }
+//     // Pform.classList.remove("hidden")
+//     // Pform.classList.add("flex");
    
-})
+// })
 
-fBtn.addEventListener("click",()=>{
-    // Fform.classList.remove("hidden");
-    // Fform.classList.add("flex")
-    Fform.classList.toggle("hidden")
-    if(!Fform.classList.contains("hidden")){
-        fBtn.textContent="Hide Information"
-    }
-    else{
-        fBtn.textContent="Family Information"
-    }
-})
-
-
+// fBtn.addEventListener("click",()=>{
+//     // Fform.classList.remove("hidden");
+//     // Fform.classList.add("flex")
+//     Fform.classList.toggle("hidden")
+//     if(!Fform.classList.contains("hidden")){
+//         fBtn.textContent="Hide Information"
+//     }
+//     else{
+//         fBtn.textContent="Family Information"
+//     }
+// })
 
 
 
 
 
-// today's H.W
- class Human{
-    // Name
-    setName(name){
-      if(isNaN(name) && name.length>=3){
-           this.name=name
-      }
-      else{
-        console.log("the name is not validated")
-      }
-    }
-    getName(){
-      return this.name;
-    }
-    // Age
- setAge(age){
-    if(!isNaN(age)&& age>=1){
-        this.age=age;
-    }
-    else{
-        console.log("the age should be a number and greater than 1")
-    }
- }
- getAge(){
-    return this.age;
- }
-//  Email
-  setEmail(email){
-    if(email.includes("@gmail.com") && isNaN(email)){
-        this.email= email;
-    }
-    else{
-        console.log("your email is not validated")
-    }
-  }
-getEmail(){
-    return this.email;
-}
 
- }
-//  instanciation
-const person1=new Human();
-person1.setAge(45);
-person1.setEmail("Fatima@gmail.com  ");
-console.log(person1.getEmail());
-person1.setAge(23);
-person1.setName("Ali Reza");
-console.log(person1.getName());
 
-const person2=new Human();
-const person3=new Human();
+// // today's H.W
+//  class Human{
+//     // Name
+//     setName(name){
+//       if(isNaN(name) && name.length>=3){
+//            this.name=name
+//       }
+//       else{
+//         console.log("the name is not validated")
+//       }
+//     }
+//     getName(){
+//       return this.name;
+//     }
+//     // Age
+//  setAge(age){
+//     if(!isNaN(age)&& age>=1){
+//         this.age=age;
+//     }
+//     else{
+//         console.log("the age should be a number and greater than 1")
+//     }
+//  }
+//  getAge(){
+//     return this.age;
+//  }
+// //  Email
+//   setEmail(email){
+//     if(email.includes("@gmail.com") && isNaN(email)){
+//         this.email= email;
+//     }
+//     else{
+//         console.log("your email is not validated")
+//     }
+//   }
+// getEmail(){
+//     return this.email;
+// }
+
+//  }
+// //  instanciation
+// const person1=new Human();
+// person1.setAge(45);
+// person1.setEmail("Fatima@gmail.com  ");
+// console.log(person1.getEmail());
+// person1.setAge(23);
+// person1.setName("Ali Reza");
+// console.log(person1.getName());
+
+// const person2=new Human();
+// const person3=new Human();
 
 
 
@@ -94,44 +94,51 @@ const person3=new Human();
 
 
 //  Saturday's HomeWork
-class Animal{
-    name;
-    age;
-    weight;
-    constructor(name,age,weight){
-        this.name=name;
-        this.age=age;
-        this.weight=weight;
-    }
-    eat(){
-        console.log(`${this.name} can eat something`);
+// class Animal{
+//     name;
+//     age;
+//     weight;
+//     constructor(name,age,weight){
+//         this.name=name;
+//         this.age=age;
+//         this.weight=weight;
+//     }
+//     eat(){
+//         console.log(`${this.name} can eat something`);
 
-    }
-    sound(){
-        console.log(`${this.name} can make sound`)
-    }
-}
-class Human extends Animal{
-    lastName;
-    constructor(lsName,name,age,weight){
-        super(Animal)
-     this.lastName=lsName;
-     this.name=name;
-     this.age=age;
-     this.weight=weight;
-    }
-    static work(){
-              console.log("Human can work")
-    }
-    think(){
-        console.log("Human can think")
-    }
-}
-const user1=new Human("Ahmad",23,60,"Ahmadi");
-user1.eat();
-Human.work();
-Human.eat();
-Human.sound();
+//     }
+//     sound(){
+//         console.log(`${this.name} can make sound`)
+//     }
+// }
+// class Human extends Animal{
+//     lastName;
+//     constructor(lsName,name,age,weight){
+        
+//         super(Animal)
+//      this.lastName=lsName;
+//      this.name=name;
+//      this.age=age;
+//      this.weight=weight;
+//     }
+//     static work(){
+//               console.log("Human can work")
+//     }
+//     think(){
+//         console.log("Human can think")
+//     }
+// }
+// const user1=new Human("Ahmad",23,60,"Ahmadi");
+// user1.eat();
+// const working=Human.work();
+// Human.eat();
+// Human.sound();
+
+
+
+
+
+
 
 
 
