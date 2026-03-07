@@ -322,3 +322,37 @@ class Weather{
 
 const currentWeather=  new Weather(23);
 const result=currentWeather.celciusToFaranhite();
+
+
+
+class Animal{
+    name;
+    age;
+    constructor(name,age){
+        this.name=name;
+        this.age=age;
+    }
+    move(){
+        return this.name + "can walk"
+    }
+}
+// const Dog=new Animal("Dog",4);
+// console.log(Dog.move());
+// const Cat=new Animal("Cat",2)
+// console.log(Cat.move());
+// const person2=new Animal("John",45)
+// console.log(person2.move());
+
+
+class Cat extends Animal{
+   isPet;
+   constructor(name,age,isPet){
+    super(Animal);
+    this.name=name;
+    this.age=age;
+    this.isPet=isPet;
+   }
+   move(){
+    return `${this.name} moves with four legs`
+   }
+}
