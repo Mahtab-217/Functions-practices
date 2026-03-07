@@ -278,3 +278,22 @@
 // else{
 //     console.log("this field is sealed");
 // }
+
+
+
+
+
+
+// Today's HomeWork
+// abstraction
+class Human{
+  name;
+  age;
+  email;
+  constructor(name,age,email){
+    this.name=name;
+    this.age=age;
+    this.email=email;
+  }
+
+}
