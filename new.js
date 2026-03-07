@@ -356,3 +356,19 @@ class Cat extends Animal{
     return `${this.name} moves with four legs`
    }
 }
+ class Human extends Animal{
+    lastName;
+     constructor(name,age,lastName){
+        super(Animal)
+        this.name=name;
+        this.age=age;
+        this.lastName=lastName;
+     }
+     move(){
+        return `${this.name} moves with two legs`
+     }
+ }
+ const cat1=new Cat("Nanaz",4,"true");
+ cat1.move();
+ const cat2=new Cat("Meow",2,"false");
+ const person3=new Human("Ali",23, "Ahmadi");
