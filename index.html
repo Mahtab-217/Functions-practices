@@ -17,7 +17,14 @@
         name.includes("l")&&
         age>18 &&
         lastName.includes("A");
-        console.log("Hi there dear")
+        console.log("Hi there dear");
+
+
+        function User(name,lastName){
+          this.lastName=lastName;
+          this.name=name;
+        }
+        const person1=new User("Ali", "Alizada");
     </script>
 </body>
 </html>
