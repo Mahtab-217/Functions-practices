@@ -301,13 +301,9 @@ class Human{
   talk(){
     console.log(`${this.name} can talk`)
   }
-       
 }
 const person1=new Human("Ahmad", 23,"ahmad@example.com");
 person1.getAge();
-
-
-
 class Weather{
     constructor(degree){
         this.degree=degree;
@@ -316,15 +312,13 @@ class Weather{
         const convert=this.degree*9/5 +32;
         return convert;
     }
-
 }
-
-
 const currentWeather=  new Weather(23);
 const result=currentWeather.celciusToFaranhite();
 
 
 
+// polymorphism
 class Animal{
     name;
     age;
@@ -336,8 +330,6 @@ class Animal{
         return this.name + "can walk"
     }
 }
-
-
 class Cat extends Animal{
    isPet;
    constructor(name,age,isPet){
